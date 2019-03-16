@@ -17,6 +17,7 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 import javax.validation.Valid;
 import java.net.URI;
 import java.util.List;
+import java.util.ArrayList;
 
 
 @Api( description="API pour es opérations CRUD sur les produits.")
@@ -44,7 +45,28 @@ public class ProductController {
 
         produitsFiltres.setFilters(listDeNosFiltres);
 
-        return produitsFiltres;
+
+
+
+  return produitsFiltres;
+        }
+
+    @RequestMapping(value = "/AdminProduits", method = RequestMethod.GET)
+
+
+    public List<String> calculMargeProduit() {
+
+        Iterable<Product> produits = productDao.findAll();
+
+
+
+        List<String> display = new ArrayList<String>();
+        for (Product produit : produits) {
+            display.add(produit.toString());
+
+        }
+
+        return display;
     }
 
 
@@ -60,6 +82,10 @@ public class ProductController {
 
         return produit;
     }
+
+
+
+
 
 
 

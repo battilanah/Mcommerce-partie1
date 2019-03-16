@@ -25,16 +25,19 @@ public class Product {
     //information que nous ne souhaitons pas exposer
     private int prixAchat;
 
+
+
     //constructeur par défaut
     public Product() {
     }
 
     //constructeur pour nos tests
-    public Product(int id, String nom, int prix, int prixAchat) {
+    public Product(int id, String nom, int prix, int prixAchat, int Marge) {
         this.id = id;
         this.nom = nom;
         this.prix = prix;
         this.prixAchat = prixAchat;
+
     }
 
     public int getId() {
@@ -69,12 +72,21 @@ public class Product {
         this.prixAchat = prixAchat;
     }
 
+
+
+    public int calculMarge(){
+        return this.prix - this.prixAchat;
+    }
+
+
     @Override
     public String toString() {
         return "Product{" +
                 "id=" + id +
                 ", nom='" + nom + '\'' +
                 ", prix=" + prix +
+                ", marge=" + calculMarge()+
+
                 '}';
     }
 }
