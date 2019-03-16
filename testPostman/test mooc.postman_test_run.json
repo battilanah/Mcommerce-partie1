@@ -1,0 +1,122 @@
+{
+	"id": "2c9fea33-a4b3-4357-a64a-0c2afaed175c",
+	"name": "test mooc",
+	"allTests": [],
+	"timestamp": "2019-03-16T14:32:35.794Z",
+	"collection_id": "cda761ff-71bc-40cb-b914-d52895c1b4c8",
+	"folder_id": 0,
+	"target_type": "collection",
+	"environment_id": "0",
+	"data": [],
+	"delay": 0,
+	"count": 1,
+	"collection": {
+		"id": "cda761ff-71bc-40cb-b914-d52895c1b4c8",
+		"name": "test mooc",
+		"description": "",
+		"auth": null,
+		"events": null,
+		"variables": [],
+		"order": [
+			"3d4c5a92-d876-42de-a8a9-ab678c5747e4",
+			"f02c7396-b921-4ce7-92d5-c9c741bfa883"
+		],
+		"folders_order": [],
+		"owner": "6831953",
+		"favorite": false,
+		"type": "collection",
+		"depth": 0
+	},
+	"folder": null,
+	"environment": null,
+	"globals": [],
+	"results": [
+		{
+			"name": "test AdminProduits",
+			"id": "3d4c5a92-d876-42de-a8a9-ab678c5747e4",
+			"url": "http://localhost:9090/AdminProduits",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				"43"
+			],
+			"allTests": [
+				{}
+			],
+			"time": "43",
+			"totalRequestTime": "43",
+			"iterationResults": {}
+		},
+		{
+			"name": "test triParOrdreAlphabetique",
+			"id": "f02c7396-b921-4ce7-92d5-c9c741bfa883",
+			"url": "http://localhost:9090/AlphabetOrder",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				"7"
+			],
+			"allTests": [
+				{}
+			],
+			"time": "7",
+			"totalRequestTime": "7",
+			"iterationResults": {}
+		}
+	],
+	"totalPass": 0,
+	"totalFail": 0,
+	"totalTime": 50,
+	"lifecycle": "done",
+	"requests": [
+		{
+			"name": "test AdminProduits",
+			"id": "3d4c5a92-d876-42de-a8a9-ab678c5747e4",
+			"url": "http://localhost:9090/AdminProduits",
+			"time": "2019-03-16T14:32:35.794Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {}
+		},
+		{
+			"name": "test triParOrdreAlphabetique",
+			"id": "f02c7396-b921-4ce7-92d5-c9c741bfa883",
+			"url": "http://localhost:9090/AlphabetOrder",
+			"time": "2019-03-16T14:32:35.794Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {}
+		}
+	],
+	"synced": false
+}

@@ -70,7 +70,7 @@ public class ProductController {
         return display;
     }
 
- /*   @RequestMapping(value = "/AlphabetOrder", method = RequestMethod.GET)
+    @RequestMapping(value = "/AlphabetOrder", method = RequestMethod.GET)
 
     public Iterable triParOrdreAlphabetique(){
 
@@ -80,7 +80,7 @@ public class ProductController {
 
 
     }
-*/
+
 
 
 
