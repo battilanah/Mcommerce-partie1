@@ -35,7 +35,7 @@ public class ProductController {
 
     public MappingJacksonValue listeProduits() {
 
-        Iterable<Product> produits = productDao.findAll();
+        Iterable<Product> produits = productDao.findAllOrOrderByNom();
 
         SimpleBeanPropertyFilter monFiltre = SimpleBeanPropertyFilter.serializeAllExcept("prixAchat");
 
@@ -68,6 +68,19 @@ public class ProductController {
 
         return display;
     }
+
+ /*   @RequestMapping(value = "/AlphabetOrder", method = RequestMethod.GET)
+
+    public Iterable triParOrdreAlphabetique(){
+
+        Iterable<Product> produits = productDao.findAllOrOrderByNom();
+
+        return produits;
+
+
+    }
+*/
+
 
 
     //Récupérer un produit par son Id
